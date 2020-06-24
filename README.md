@@ -33,7 +33,7 @@ Inspect the CSVs and sketch out an ERD of the tables. ![ERD Table](***EmployeeSQ
 
 #### Data Analysis
 
-* List the following details of each employee: employee number, last name, first name, gender, and salary.
+* Query the following details of each employee: employee number, last name, first name, gender, and salary.
 
 ```
 SELECT employees.emp_no, employees.last_name, employees.first_name, employees.gender, salaries.salary
@@ -42,7 +42,7 @@ JOIN salaries
 ON employees.emp_no = salaries.emp_no;
 ```
 
-* List employees who were hired in 1986.
+* Query employees who were hired in 1986.
 
 ```
 SELECT first_name, last_name, hire_date 
@@ -50,7 +50,7 @@ FROM employees
 WHERE hire_date BETWEEN '1986-01-01' AND '1987-01-01';
 ```
 
-* List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
+* Query the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
 
 ```
 SELECT departments.dept_no, departments.dept_name, dept_manager.emp_no, employees.last_name, employees.first_name, dept_manager.from_date, dept_manager.to_date
@@ -61,7 +61,7 @@ JOIN employees
 ON dept_manager.emp_no = employees.emp_no;
 ```
 
-* List the department of each employee with the following information: employee number, last name, first name, and department name.
+* Query the department of each employee with the following information: employee number, last name, first name, and department name.
 
 ```
 SELECT dept_emp.emp_no, employees.last_name, employees.first_name, departments.dept_name
@@ -73,7 +73,7 @@ ON dept_emp.dept_no = departments.dept_no;
 ```
 
 
-* List all employees whose first name is "Hercules" and last names begin with "B."
+* Query all employees whose first name is "Hercules" and last names begin with "B."
 
 ```
 SELECT first_name, last_name
@@ -83,7 +83,7 @@ AND last_name LIKE 'B%';
 
 ```
 
-* List all employees in the Sales department, including their employee number, last name, first name, and department name.
+* Query all employees in the Sales department, including their employee number, last name, first name, and department name.
 
 ```
 SELECT dept_emp.emp_no, employees.last_name, employees.first_name, departments.dept_name
@@ -95,7 +95,7 @@ ON dept_emp.dept_no = departments.dept_no
 WHERE departments.dept_name = 'Sales';
 ```
 
-* List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+* Query all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
 ```
 SELECT dept_emp.emp_no, employees.last_name, employees.first_name, departments.dept_name
@@ -122,11 +122,11 @@ COUNT(last_name) DESC;
 
 * Import the SQL database into Pandas. 
 
-   ```sql
-   from sqlalchemy import create_engine
-   engine = create_engine('postgresql://localhost:5432/<your_db_name>')
-   connection = engine.connect()
-   ```
+```
+from sqlalchemy import create_engine
+engine = create_engine('postgresql://localhost:5432/<your_db_name>')
+connection = engine.connect()
+```
 
 # Visualization
 
