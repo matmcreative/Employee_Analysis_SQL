@@ -1,6 +1,13 @@
-# SQL Challenge
+# Employee Analysis | SQL
 
 ![***EmployeeSQL***/sql.png](***EmployeeSQL***/sql.png)
+
+## Table of Contents
+* [Objective](#Objective)
+* [Technologies](#Technologies)
+* [ETL](#ETL)
+* [Visualization](#Visualization)
+* [Troubleshooting](#Troubleshooting)
 
 #### Data Modeling
 
