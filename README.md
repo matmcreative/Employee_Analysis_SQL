@@ -1,6 +1,7 @@
 # Employee Analysis | SQL
 
 <img src="***EmployeeSQL***/sql.png" width=350px align=right>
+
 ## Table of Contents
 * [Objective](#Objective)
 * [Technologies](#Technologies)
