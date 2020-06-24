@@ -15,6 +15,16 @@
 * Python
 * Pandas
 
+# ETL
+## Process Documentation
+
+## E | Extract
+
+## T | Transform
+
+## L | Load
+
+
 #### Data Modeling
 
 Inspect the CSVs and sketch out an ERD of the tables. ![ERD Table](***EmployeeSQL***/db_map.pdf) was created in Adobe Illustrator.
@@ -130,6 +140,6 @@ As you examine the data, you are overcome with a creeping suspicion that the dat
 3. Create a bar chart of average salary by title.
 
 
-### Copyright
+# Visualization
 
-Trilogy Education Services © 2019. All Rights Reserved.
+# Troubleshooting
