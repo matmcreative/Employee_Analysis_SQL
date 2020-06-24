@@ -33,7 +33,7 @@ Inspect the CSVs and sketch out an ERD of the tables. ![ERD Table](***EmployeeSQ
 
 #### Data Analysis
 
-1. List the following details of each employee: employee number, last name, first name, gender, and salary.
+* List the following details of each employee: employee number, last name, first name, gender, and salary.
 
 ```
 SELECT employees.emp_no, employees.last_name, employees.first_name, employees.gender, salaries.salary
@@ -42,7 +42,7 @@ JOIN salaries
 ON employees.emp_no = salaries.emp_no;
 ```
 
-2. List employees who were hired in 1986.
+* List employees who were hired in 1986.
 
 ```
 SELECT first_name, last_name, hire_date 
@@ -50,7 +50,7 @@ FROM employees
 WHERE hire_date BETWEEN '1986-01-01' AND '1987-01-01';
 ```
 
-3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
+* List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
 
 ```
 SELECT departments.dept_no, departments.dept_name, dept_manager.emp_no, employees.last_name, employees.first_name, dept_manager.from_date, dept_manager.to_date
@@ -61,7 +61,7 @@ JOIN employees
 ON dept_manager.emp_no = employees.emp_no;
 ```
 
-4. List the department of each employee with the following information: employee number, last name, first name, and department name.
+* List the department of each employee with the following information: employee number, last name, first name, and department name.
 
 ```
 SELECT dept_emp.emp_no, employees.last_name, employees.first_name, departments.dept_name
@@ -73,7 +73,7 @@ ON dept_emp.dept_no = departments.dept_no;
 ```
 
 
-5. List all employees whose first name is "Hercules" and last names begin with "B."
+* List all employees whose first name is "Hercules" and last names begin with "B."
 
 ```
 SELECT first_name, last_name
@@ -83,7 +83,7 @@ AND last_name LIKE 'B%';
 
 ```
 
-6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
+* List all employees in the Sales department, including their employee number, last name, first name, and department name.
 
 ```
 SELECT dept_emp.emp_no, employees.last_name, employees.first_name, departments.dept_name
@@ -95,7 +95,7 @@ ON dept_emp.dept_no = departments.dept_no
 WHERE departments.dept_name = 'Sales';
 ```
 
-7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+* List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
 ```
 SELECT dept_emp.emp_no, employees.last_name, employees.first_name, departments.dept_name
@@ -108,7 +108,7 @@ WHERE departments.dept_name = 'Sales'
 OR departments.dept_name = 'Development';
 ```
 
-8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+* In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
 ```
 SELECT last_name,
@@ -120,7 +120,7 @@ COUNT(last_name) DESC;
 ```
 ## L | Load
 
-1. Import the SQL database into Pandas. 
+* Import the SQL database into Pandas. 
 
    ```sql
    from sqlalchemy import create_engine
@@ -128,11 +128,11 @@ COUNT(last_name) DESC;
    connection = engine.connect()
    ```
 
-2. Create a histogram to visualize the most common salary ranges for employees.
-
-3. Create a bar chart of average salary by title.
-
-
 # Visualization
+
+* Create a histogram to visualize the most common salary ranges for employees.
+
+* Create a bar chart of average salary by title.
+
 
 # Troubleshooting
