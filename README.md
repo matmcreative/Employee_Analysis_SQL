@@ -18,22 +18,24 @@
 # ETL
 ## Process Documentation
 
+#### Data Modeling
+Inspect the CSVs and sketch out an ERD of the tables. ![ERD Table](***EmployeeSQL***/db_map.pdf) was created in Adobe Illustrator.
+
+#### Data Engineering
+* Create a table schema for each of the six CSV files, specifying data types, primary keys, foreign keys, and other constraints.
+
+
 ## E | Extract
+* Downloaded CSV datasets
+* Import each CSV file into the corresponding SQL table.
 
 ## T | Transform
 
 ## L | Load
 
 
-#### Data Modeling
 
-Inspect the CSVs and sketch out an ERD of the tables. ![ERD Table](***EmployeeSQL***/db_map.pdf) was created in Adobe Illustrator.
 
-#### Data Engineering
-
-* Create a table schema for each of the six CSV files, specifying data types, primary keys, foreign keys, and other constraints.
-
-* Import each CSV file into the corresponding SQL table.
 
 #### Data Analysis
 
