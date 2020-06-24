@@ -9,6 +9,12 @@
 * [Visualization](#Visualization)
 * [Troubleshooting](#Troubleshooting)
 
+# Technologies
+* SQL
+* SQLAlchemy
+* Python
+* Pandas
+
 #### Data Modeling
 
 Inspect the CSVs and sketch out an ERD of the tables. ![ERD Table](***EmployeeSQL***/db_map.pdf) was created in Adobe Illustrator.
