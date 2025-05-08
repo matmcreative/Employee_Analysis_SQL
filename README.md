@@ -9,7 +9,7 @@
 * [Visualization](#Visualization)
 * [Troubleshooting](#Troubleshooting)
 
-# Overview:
+# Objective:
 This project demonstrates end-to-end data analysis using SQL and Python. It includes data modeling, database creation, and structured queries to explore employee demographics, salaries, and departmental distributions.
 
 ## Key Features:
