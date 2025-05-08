@@ -9,6 +9,19 @@
 * [Visualization](#Visualization)
 * [Troubleshooting](#Troubleshooting)
 
+# Overview:
+This project demonstrates end-to-end data analysis using SQL and Python. It includes data modeling, database creation, and structured queries to explore employee demographics, salaries, and departmental distributions.
+
+## Key Features:
+* Created a relational database from six CSV files
+* Defined schemas with primary/foreign keys for normalized tables
+* Built an Entity Relationship Diagram (ERD)
+* Performed analytical queries on employee data (e.g., salary trends, departmental analysis)
+* Designed for extensibility and BI dashboard integration
+      
+## Use Case:
+Ideal for demonstrating SQL fluency, relational data design, and basic Python data engineering in job portfolios or interviews.
+
 # Technologies
 * SQL
 * SQLAlchemy
